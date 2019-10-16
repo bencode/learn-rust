@@ -41,8 +41,15 @@ fn main() {
     let f = b[0];
 
     another_func(f);
+    fun2(5, 6);
 }
 
 fn another_func(x: i32) {
     println!("The value of x is: {}", x);
 }
+
+fn fun2(x: i32, y: i32) {
+    println!("The value of x is: {}", x);
+    println!("The value of y is: {}", y);
+}
+
