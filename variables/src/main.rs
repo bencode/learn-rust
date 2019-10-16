@@ -42,6 +42,10 @@ fn main() {
 
     another_func(f);
     fun2(5, 6);
+
+    fun_stat();
+    let c = hi(1, 2);
+    println!("{}", c);
 }
 
 fn another_func(x: i32) {
@@ -53,3 +57,15 @@ fn fun2(x: i32, y: i32) {
     println!("The value of y is: {}", y);
 }
 
+fn fun_stat() {
+    let x = 5;
+    // block is expression
+    let y = {
+        let x = 3;
+        x + 1;
+    };
+}
+
+fn hi(a: i32, b: i32) -> i32 {
+    return a + b;
+}
